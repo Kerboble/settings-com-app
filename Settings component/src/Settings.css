@@ -187,9 +187,7 @@ a {
     background-color: #262b15;
   }
   
-  input:focus + .slider {
-    box-shadow: 0 0 1px #262b15;
-  }
+
   
   input:checked + .slider:before {
     -webkit-transform: translateX(13px);

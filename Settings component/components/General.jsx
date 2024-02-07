@@ -36,7 +36,7 @@ const savedInputValues = JSON.parse(localStorage.getItem('inputValue'))
       <h2 className="setting-title preferences">Preferences</h2>
       <hr align="center" className="horizontal-line"></hr>
       <div className="setting-title-options auto-sign-on">
-        <h4>Sign me on automatically</h4>
+        <h4>Sign Me On Automatically</h4>
         <span className="settings-description">Enabling this will make you yo sing-in automatically when the program starts</span>
         <label className="switch">
           <input 
@@ -51,7 +51,7 @@ const savedInputValues = JSON.parse(localStorage.getItem('inputValue'))
       </div>
 
       <div className="setting-title-options drag-and-drop">
-        <h4>Confirm drag and drop uploads</h4>
+        <h4>Confirm Drag And Drop Uploads</h4>
         <span className="settings-description">Add a confirmation alert before uploading a file</span>
         <label className="switch">
           <input 
@@ -66,7 +66,7 @@ const savedInputValues = JSON.parse(localStorage.getItem('inputValue'))
       </div>
 
       <div className="setting-title-options time-option">
-        <h4>Hide inactive messages</h4>
+        <h4>Hide Inactive Messages</h4>
         <span className="settings-description">Hide messages after selected time</span>
         <select 
           className="time-options"
@@ -86,7 +86,7 @@ const savedInputValues = JSON.parse(localStorage.getItem('inputValue'))
       <hr className="horizontal-line"></hr> 
       <div className="setting-title-options dark-mode">
         <h4>Dark Mode</h4>
-        <span className="settings-description">Toggles the theme of the app</span>
+        <span className="settings-description">Toggles The Theme Of The App</span>
         <label className="switch">
           <input 
           type="checkbox"
@@ -99,7 +99,7 @@ const savedInputValues = JSON.parse(localStorage.getItem('inputValue'))
         </label>
 
       <div className="setting-title-options hide-offline-friends">
-        <h4>Hide offline friends</h4>
+        <h4>Hide Offline Contacts</h4>
         <span className="settings-description">Do not display contacts in the list who are offline</span>
         <label className="switch">
           <input 

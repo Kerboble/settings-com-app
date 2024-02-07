@@ -1,5 +1,5 @@
 import React from 'react'
-import {Form, } from 'react-router-dom'
+import { Form } from 'react-router-dom'
 
 export default function Account() {
 
@@ -11,7 +11,9 @@ export default function Account() {
       firstName: "",
       lastName: "",
       userName: "",
-      email: ""
+      email: "",
+      newPassword: "",
+      confirmPassword: ""
     }
   )
 
@@ -32,6 +34,10 @@ export default function Account() {
 
   function handleSubmit(e){
     e.preventDefault();
+    if(accountData.newPassword !== accountData.confirmPassword){
+      return alert('please make sure passwords match')
+    }
+    alert('submitted')
     console.log(accountData)
   }
   
@@ -57,7 +63,6 @@ export default function Account() {
           <input 
             className='account-input lastName' 
             name="lastName" type="text" 
-            placeholder='' 
             value={accountData.lastName} 
             onChange={handleChange}></input>
 
@@ -66,19 +71,32 @@ export default function Account() {
             className='account-input userName' 
             name="userName" 
             type="text" 
-            placeholder='' 
             value={accountData.userName} 
             onChange={handleChange}></input>
 
-          <h4>Email</h4>
+          <h4>Change Email</h4>
           <input 
             className='account-input email' 
             name="email" 
             type="email" 
-            placeholder='' 
             value={accountData.email} 
             onChange={handleChange}></input>
 
+          <h4>New Password</h4>
+          <input 
+            className='account-input new-password' 
+            name="newPassword" 
+            type="password" 
+            value={accountData.newPassword} 
+            onChange={handleChange}></input>
+
+          <h4>Confirm New Password</h4>
+          <input 
+            className='account-input confirm-new-password' 
+            name="confirmPassword" 
+            type="password" 
+            value={accountData.confirmPassword} 
+            onChange={handleChange}></input>
             <button className="submitBtn" type='submit'>Submit</button>
         </form>
       </div>
